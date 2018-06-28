@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace AutoMapperFacadeReflection
 {
-    public class Class1
+    public class MainClass
     {
+        static void Main()
+        {
+
+        }
     }
+
+    
 }
