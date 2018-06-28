@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +17,13 @@ namespace AutoMapperFacadeReflection
             Console.WriteLine(string.Format(@"{0}---- AutoMapper test -----{1}", Environment.NewLine, Environment.NewLine));
             var autoMapperTest = new AutoMapperTest();
             autoMapperTest.MappingTest();
+
+            Console.WriteLine(string.Format(@"{0}---- Reflection test -----{1}", Environment.NewLine, Environment.NewLine));
+
+            Assembly assembly = typeof(MainClass).Assembly;
+            Type elephantType = assembly.GetType("AutoMapperFacadeReflection.ReflectionElephantModel");
+            Object elephant = Activator.CreateInstance(elephantType, "Loxodonta africana", 7650, 396);
+            Console.WriteLine(string.Format(@"{0}, {1}, {2}", ((ReflectionElephantModel)elephant).ScientificName, ((ReflectionElephantModel)elephant).Weight, ((ReflectionElephantModel)elephant).Height));
         }
     }
 
