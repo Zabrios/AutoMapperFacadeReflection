@@ -10,7 +10,8 @@ namespace AutoMapperFacadeReflection
     {
         static void Main()
         {
-
+            FacadeSubManager fsm = new FacadeSubManager();
+            fsm.TurnOffEverything();
         }
     }
 
