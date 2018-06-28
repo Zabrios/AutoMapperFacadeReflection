@@ -44,5 +44,15 @@
     <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FacadeSub1\FacadeSub1.csproj">
+      <Project>{d5a49507-bac3-4ab8-8d90-43705bf58c39}</Project>
+      <Name>FacadeSub1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FacadeSub2\FacadeSub2.csproj">
+      <Project>{3da9cbac-43a4-46ae-acac-ad8d03717b32}</Project>
+      <Name>FacadeSub2</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
