@@ -50,13 +50,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoMapperTest.cs" />
-    <Compile Include="FacadeSubManager.cs" />
+    <Compile Include="AutoMapper\AutoMapperTest.cs" />
+    <Compile Include="Facade\FacadeSubManager.cs" />
     <Compile Include="MainClass.cs" />
-    <Compile Include="PersonModel.cs" />
+    <Compile Include="AutoMapper\PersonModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReflectionElephantModel.cs" />
-    <Compile Include="StudentModel.cs" />
+    <Compile Include="Reflection\ReflectionElephantModel.cs" />
+    <Compile Include="AutoMapper\StudentModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FacadeSub1\FacadeSub1.csproj">
