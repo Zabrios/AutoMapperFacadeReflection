@@ -22,7 +22,7 @@ namespace AutoMapperFacadeReflection
 
             Assembly assembly = typeof(MainClass).Assembly;
             Type elephantType = assembly.GetType("AutoMapperFacadeReflection.ReflectionElephantModel");
-            Object elephant = Activator.CreateInstance(elephantType, "Loxodonta africana", 7650, 396);
+            var elephant = Activator.CreateInstance(elephantType, "Loxodonta africana", 7650, 396);
             Console.WriteLine(string.Format(@"{0}, {1}, {2}", ((ReflectionElephantModel)elephant).ScientificName, ((ReflectionElephantModel)elephant).Weight, ((ReflectionElephantModel)elephant).Height));
         }
     }
