@@ -18,14 +18,16 @@ namespace AutoMapperFacadeReflection.Reflection
 
             foreach(XmlNode types in doc.SelectNodes("//Types"))
             {
-                //var reflectionVar = types.SelectSingleNode("Type");
-                //string className = MethodBase.GetCurrentMethod().DeclaringType.Name;
-                //string varEleph = reflectionVar.InnerText;
-                ////Assembly asm = typeof(className, true).Assembly;
-                //Type elephantType = Type.GetType(varEleph, true);
-                //var elephant = Activator.CreateInstance(elephantType, "Loxodonta africana", 7650, 396);
-                //Console.WriteLine(string.Format(@"{0}, {1}, {2}", ((ReflectionElephantModel)elephant).ScientificName, ((ReflectionElephantModel)elephant).Weight, ((ReflectionElephantModel)elephant).Height));
-                //Console.WriteLine(className.InnerText); 
+                var reflectionVar = types.SelectSingleNode("Type");
+                string varEleph = reflectionVar.InnerText;
+                varEleph = varEleph.Trim();
+
+                Assembly asm = typeof(ReflectionManager).Assembly;
+                Type elephantType = asm.GetType(varEleph);
+
+                var elephant = Activator.CreateInstance(elephantType, "Loxodonta africana", 7650, 396);
+                Console.WriteLine(string.Format(@"{0}, {1}, {2}", ((ReflectionElephantModel)elephant).ScientificName, ((ReflectionElephantModel)elephant).Weight, ((ReflectionElephantModel)elephant).Height));
+                //Console.WriteLine(className.InnerText);
             }
         }
     }
