@@ -14,13 +14,16 @@ namespace AutoMapperFacadeReflection
             Console.WriteLine(string.Format(@"---- Facade test -----{0}", Environment.NewLine));
             FacadeSubManager fsm = new FacadeSubManager();
             fsm.TurnOffEverything();
-            Console.WriteLine(string.Format(@"{0}---- AutoMap
+            Console.WriteLine($@"{Environment.NewLine}---- AutoMap
 
-per test -----{1}", Environment.NewLine, Environment.NewLine));
+per test -----{Environment.NewLine}");
             var autoMapperTest = new AutoMapperTest();
             autoMapperTest.MappingTest();
 
             Console.WriteLine(string.Format(@"{0}---- Reflection test -----{1}", Environment.NewLine, Environment.NewLine));
+
+            Reflection.ReflectionManager xpr = new Reflection.ReflectionManager();
+            xpr.XPathReader();
 
             Assembly assembly = typeof(MainClass).Assembly;
             Type elephantType = assembly.GetType("AutoMapperFacadeReflection.ReflectionElephantModel");
@@ -29,5 +32,5 @@ per test -----{1}", Environment.NewLine, Environment.NewLine));
         }
     }
 
-    
+
 }

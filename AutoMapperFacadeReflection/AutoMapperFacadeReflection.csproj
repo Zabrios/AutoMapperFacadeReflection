@@ -57,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\ReflectionElephantModel.cs" />
     <Compile Include="AutoMapper\StudentModel.cs" />
+    <Compile Include="Reflection\ReflectionManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FacadeSub1\FacadeSub1.csproj">
