@@ -8,6 +8,11 @@ namespace AutoMapperFacadeReflection
 {
     public class FacadeSubManager
     {
+        //private FacadeSub2.MonitorOff mo;
+        //private FacadeSub2.ComputerOff co;
+        //private FacadeSub1.ServicesOff so;
+        //private FacadeSub1.WindowsOff wo;
+
         public void TurnOffEverything()
         {
             string subMonitor = FacadeSub2.MonitorOff.TurnOffMonitor();

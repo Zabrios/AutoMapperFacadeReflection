@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Types>
+  <Type Id ="ReflectionElephantModel" >
+    AutoMapperFacadeReflection.ReflectionElephantModel"
+  </Type>
+</Types>
+<!--
+<AutoMapperFacadeReflection>
+  <Reflection>
+    <ReflectionElephantModel>
+      <ScientificName>Loxodonta africana</ScientificName>
+      <Weight>7650</Weight>
+      <Height>396</Height>
+    </ReflectionElephantModel>xpath information
+  </Reflection>
+</AutoMapperFacadeReflection> 
+-->

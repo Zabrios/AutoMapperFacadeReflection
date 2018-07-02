@@ -14,7 +14,9 @@ namespace AutoMapperFacadeReflection
             Console.WriteLine(string.Format(@"---- Facade test -----{0}", Environment.NewLine));
             FacadeSubManager fsm = new FacadeSubManager();
             fsm.TurnOffEverything();
-            Console.WriteLine(string.Format(@"{0}---- AutoMapper test -----{1}", Environment.NewLine, Environment.NewLine));
+            Console.WriteLine(string.Format(@"{0}---- AutoMap
+
+per test -----{1}", Environment.NewLine, Environment.NewLine));
             var autoMapperTest = new AutoMapperTest();
             autoMapperTest.MappingTest();
 
